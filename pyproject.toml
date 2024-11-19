@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "LambdaAgentGraph"
+version = "0.1.0"
+description = "真正的画布式AI工作流的支撑框架，基于 Langraph 。"
+authors = ["Wendaolee <leewendao@outlook.com>","YuansunTech <official@hkai.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langgraph = "^0.2.50"
+langsmith = "^0.1.143"
+langchain-anthropic = "^0.3.0"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.2.8"
+sqlalchemy = "^2.0.36"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.13.0"
+
+[tool.poetry.scripts]
+start = "langgraph_demo.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
